@@ -1,57 +1,47 @@
 <!DOCTYPE html>
 <!-- =========================================================================
      PERSONAL WEBSITE — single page.
-     Everything you need to edit is in this one file (text) plus style.css
-     (colors and fonts). Anything written as PLACEHOLDER is meant to be
-     replaced by you; search the file for that word to find them all.
+     All the text lives in this file; all the colours and fonts live in
+     style.css. Anything still marked PLACEHOLDER is waiting for you.
      ========================================================================= -->
 <html lang="en" data-palette="midnight">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!-- Shown in the browser tab and in Google results. -->
 <title>Lorenzo Incoronato</title>
-<meta name="description" content="PLACEHOLDER — one sentence about who you are and what you work on.">
+<meta name="description" content="Lorenzo Incoronato — economist at CSEF and the University of Naples Federico II. Labor economics, public economics, applied microeconomics.">
 
 <link rel="stylesheet" href="style.css">
 <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
 </head>
 <body>
 
-<!-- The colour scheme is chosen once, by the data-palette value on <html> above.
-     Available options are defined at the top of style.css:
-     midnight | harbor | forest | plum | graphite | sand
-     Change the word, save, reload — that is the whole procedure. -->
+<!-- Colour scheme is chosen by the data-palette word on <html> above.
+     Options (defined in style.css): midnight | harbor | forest | plum | graphite | sand -->
 
 <!-- =========================================================================
-     LEFT BANNER: photo, name, role, links, section menu.
+     LEFT BANNER
      ========================================================================= -->
 <aside class="sidebar">
 
-  <!-- Replace assets/headshot.svg with your own photo. If you save it as a
-       .jpg, change the filename below to assets/headshot.jpg -->
-  <img class="me" src="assets/headshot.svg" alt="Lorenzo Incoronato">
+  <!-- Save your photo as assets/headshot.jpg and it appears automatically.
+       Until then, the grey placeholder below is shown instead. -->
+  <img class="me" src="assets/headshot.jpg" onerror="this.onerror=null;this.src='assets/headshot.svg'" alt="Lorenzo Incoronato">
 
   <div class="name"><a href="#top">Lorenzo Incoronato</a></div>
-  <div class="role">PLACEHOLDER — your position<br>PLACEHOLDER — your institution</div>
+  <div class="role">CSEF and Department of Economics and Statistics<br>University of Naples Federico II</div>
 
-  <!-- Identity strip: CV link, then email / GitHub / Scholar / LinkedIn as icons.
-       The envelope is a button, not a mailto: link — clicking copies the address
-       (hovering reveals it) and the icon flips to a check mark. This keeps your
-       address off the page as plain text, which spam robots harvest.
-       Delete any icon you do not want: remove its whole <a>...</a> line. -->
   <div class="idlinks">
 
-    <!-- Put your CV in the assets folder, named cv.pdf, and this link works. -->
-    <a class="cv" href="assets/cv.pdf" target="_blank" title="Curriculum Vitae (PDF)"><svg class="ic-doc" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6.2 2.9h7.4l4.2 4.2v14H6.2z"/><path d="M13.6 2.9v4.4h4.2"/><path d="M9.2 12.4h5.6M9.2 15.8h5.6"/></g></svg>CV</a>
+    <!-- Your CV, served from your separate "files" repository. -->
+    <a class="cv" href="https://lincoronato.github.io/files/incoronato_cv.pdf" target="_blank" title="Curriculum Vitae (PDF)"><svg class="ic-doc" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6.2 2.9h7.4l4.2 4.2v14H6.2z"/><path d="M13.6 2.9v4.4h4.2"/><path d="M9.2 12.4h5.6M9.2 15.8h5.6"/></g></svg>CV</a>
 
     <span class="sep" aria-hidden="true"></span>
 
-    <!-- PLACEHOLDER: put your real email address in BOTH places below
-         (data-email and title). -->
-    <button type="button" class="pic mailbtn" data-email="PLACEHOLDER@example.com"
-            title="PLACEHOLDER@example.com &mdash; click to copy"
+    <!-- Clicking the envelope copies the address; hovering shows it. -->
+    <button type="button" class="pic mailbtn" data-email="lorenzo.incoronato@unina.it"
+            title="lorenzo.incoronato@unina.it &mdash; click to copy"
             aria-label="Copy email address">
       <svg class="ic-mail" viewBox="3.35 4.55 17.3 14.9" aria-hidden="true" focusable="false"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="4.2" y="5.4" width="15.6" height="13.2" rx="2.1"/><path d="m5.6 7.6 6.4 5.2 6.4-5.2"/></g></svg>
       <svg class="ic-check" viewBox="4.6 6.7 14.8 11.3" aria-hidden="true" focusable="false"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="m5.6 12.9 4.1 4.1 8.7-9.3"/></svg>
@@ -64,65 +54,199 @@ t-5 -11.5t9 -14t13 -12l7 -5q22 -10 43.5 -38t31.5 -51l10 -23q13 -38 44 -61.5t67 -
 q-10 3 -13 -2q-3 -7 7 -12q9 -6 13 2zM322 271q7 5 -2 16q-10 9 -16 3q-7 -5 2 -16q10 -10 16 -3zM352 226q9 7 0 19q-8 13 -17 6q-9 -5 0 -18t17 -7zM394 184q8 8 -4 19q-12 12 -20 3q-9 -8 4 -19q12 -12 20 -3zM451 159q3 11 -13 16q-15 4 -19 -7t13 -15q15 -6 19 6z
 M514 154q0 13 -17 11q-16 0 -16 -11q0 -13 17 -11q16 0 16 11zM572 164q-2 11 -18 9q-16 -3 -14 -15t18 -8t14 14z"/></g></svg></a>
 
-    <!-- Google Scholar glyph: Academicons 1.9.2 (James Walsh, Katja Bercic), SIL OFL 1.1. See CREDITS.md
-         PLACEHOLDER: replace the href with your own Scholar profile URL. -->
-    <a class="pic" href="https://scholar.google.com/" target="_blank" rel="noopener" title="Google Scholar" aria-label="Google Scholar"><svg class="ic-gs" viewBox="20.5 64 343 384" aria-hidden="true" focusable="false"><path fill="currentColor" d="M 343.75868,106.66243 V 79.430205 L 363.52365,63.999997 H 149.63354 L 20.476345,176.2736 h 85.656075 c -0.15534,2.12494 -0.21914,4.04644 -0.21914,6.22563 0,20.84472 7.2192,38.08662 21.67203,51.86089 14.45284,13.79702 32.25124,20.64784 53.32651,20.64784 4.92319,0 9.75059,-0.36794 14.43842,-1.02419 -2.90722,6.50082 -4.37457,12.52302 -4.37457,18.14228 0,9.87526 4.49924,20.4304 13.46715,31.6418 -39.23377,2.6705 -68.06112,9.73264 -86.43702,21.16322 -10.53108,6.49907 -19.000207,14.70396 -25.390349,24.5311 -6.390569,9.89933 -9.577754,20.51525 -9.577754,31.9616 0,9.64822 2.062375,18.33611 6.21907,26.06233 4.156694,7.7263 9.577757,14.07047 16.312223,18.98408 6.71825,4.96781 14.46899,9.10088 23.219,12.46874 8.73429,3.34378 17.40643,5.71858 26.06106,7.06258 8.62707,1.34222 17.20471,1.9985 25.70579,1.9985 13.46887,0 26.95353,-1.73428 40.54711,-5.18707 13.56165,-3.48461 26.28022,-8.64143 38.17105,-15.4927 11.85935,-6.80488 21.51545,-16.0865 28.9219,-27.7183 7.39024,-11.67998 11.09457,-24.80499 11.09457,-39.33613 0,-11.01584 -2.24964,-21.03852 -6.7502,-30.14073 -4.46864,-9.07202 -9.93785,-16.54102 -16.45271,-22.34403 -6.5008,-5.81263 -12.99987,-11.15539 -19.51512,-15.9679 -6.50083,-4.84488 -12.00021,-9.75058 -16.46884,-14.8129 -4.4848,-5.04657 -6.73444,-10.05419 -6.73444,-14.98395 0,-4.92145 1.73422,-9.67183 5.21588,-14.26559 3.45451,-4.6095 7.67376,-9.04795 12.60967,-13.30571 4.93756,-4.24944 9.87523,-8.96788 14.79665,-14.13302 4.92147,-5.14719 9.14072,-11.82739 12.60971,-20.00822 3.48467,-8.17907 5.20318,-17.44489 5.20318,-27.75679 0,-13.4527 -2.54714,-24.46065 -7.54735,-33.31348 -0.59369,-1.02243 -1.21757,-1.80338 -1.87511,-3.02225 l 56.90745,-46.672136 v 17.118526 c -7.39373,0.92969 -6.62422,5.34582 -6.62422,10.6352 v 128.66719 c 0,5.95832 4.8751,10.83382 10.83386,10.83382 h 3.98869 c 5.95835,0 10.83386,-4.87506 10.83386,-10.83382 V 117.29282 c 0,-5.27669 0.77741,-9.68801 -6.56167,-10.63039 z M 236.39865,329.14114 c 1.14099,0.7503 3.7039,2.78075 7.7184,6.03838 4.0495,3.24319 6.797,5.69582 8.26567,7.41432 1.43851,1.66381 3.5792,4.16501 6.37617,7.54734 2.81268,3.3744 4.7184,6.30394 5.71853,8.73425 1.00016,2.4767 2.01603,5.46089 3.04636,8.94556 0.98567,3.44488 1.48486,6.97595 1.48486,10.56169 0,17.04813 -6.56338,29.68007 -19.65604,37.85915 -13.125,8.18083 -28.76651,12.27368 -46.93767,12.27368 -9.18709,0 -18.2031,-1.09289 -27.06247,-3.1951 -8.84322,-2.11665 -17.31192,-5.3362 -25.39035,-9.60185 -8.07846,-4.25771 -14.57754,-10.20337 -19.50072,-17.79659 -4.93764,-7.64012 -7.40645,-16.41464 -7.40645,-26.24962 0,-10.32022 2.79692,-19.28987 8.42233,-26.90588 5.59343,-7.62564 12.93774,-13.3919 22.03208,-17.3154 9.0624,-3.94582 18.24946,-6.74232 27.56166,-8.39827 9.31221,-1.7023 18.79679,-2.555 28.43842,-2.555 4.46862,0 7.93582,0.25115 10.40465,0.69607 0.45456,0.21918 3.03188,2.07025 7.73456,5.56326 4.70401,3.46237 7.62565,5.59519 8.75047,6.38401 z m -3.35823,-100.5779 c -7.40648,8.85938 -17.73454,13.2882 -30.95363,13.2882 -11.85933,0 -22.29766,-4.76482 -31.26554,-14.31195 -8.99984,-9.52309 -15.42235,-20.32803 -19.34408,-32.43061 -3.93752,-12.10871 -5.90585,-23.98423 -5.90585,-35.648 0,-13.6942 3.59542,-25.35184 10.7809,-34.97598 7.18727,-9.64952 17.49915,-14.48477 30.93786,-14.48477 11.87507,0 22.37423,5.03825 31.43704,15.15677 9.09434,10.08482 15.60961,21.41303 19.5169,33.96799 3.92176,12.5392 5.87345,24.52979 5.87345,35.98399 0,13.44658 -3.70256,24.60984 -11.07663,33.45436 z"/></svg></a>
+    <!-- GOOGLE SCHOLAR AND LINKEDIN: I did not find these on your current site,
+         so they are switched off. To turn one back on, remove the comment markers
+         that wrap the block below and put your own profile address in the href.
 
-    <!-- LinkedIn glyph: Simple Icons (simpleicons.org), CC0 1.0. See CREDITS.md
-         PLACEHOLDER: replace the href with your own LinkedIn profile URL. -->
-    <a class="pic" href="https://www.linkedin.com/" target="_blank" rel="noopener" title="LinkedIn" aria-label="LinkedIn"><svg class="ic-li" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"/></svg></a>
+    <a class="pic" href="PUT-YOUR-SCHOLAR-URL-HERE" target="_blank" rel="noopener" title="Google Scholar" aria-label="Google Scholar"><svg class="ic-gs" viewBox="20.5 64 343 384" aria-hidden="true" focusable="false"><path fill="currentColor" d="M 343.75868,106.66243 V 79.430205 L 363.52365,63.999997 H 149.63354 L 20.476345,176.2736 h 85.656075 c -0.15534,2.12494 -0.21914,4.04644 -0.21914,6.22563 0,20.84472 7.2192,38.08662 21.67203,51.86089 14.45284,13.79702 32.25124,20.64784 53.32651,20.64784 4.92319,0 9.75059,-0.36794 14.43842,-1.02419 -2.90722,6.50082 -4.37457,12.52302 -4.37457,18.14228 0,9.87526 4.49924,20.4304 13.46715,31.6418 -39.23377,2.6705 -68.06112,9.73264 -86.43702,21.16322 -10.53108,6.49907 -19.000207,14.70396 -25.390349,24.5311 -6.390569,9.89933 -9.577754,20.51525 -9.577754,31.9616 0,9.64822 2.062375,18.33611 6.21907,26.06233 4.156694,7.7263 9.577757,14.07047 16.312223,18.98408 6.71825,4.96781 14.46899,9.10088 23.219,12.46874 8.73429,3.34378 17.40643,5.71858 26.06106,7.06258 8.62707,1.34222 17.20471,1.9985 25.70579,1.9985 13.46887,0 26.95353,-1.73428 40.54711,-5.18707 13.56165,-3.48461 26.28022,-8.64143 38.17105,-15.4927 11.85935,-6.80488 21.51545,-16.0865 28.9219,-27.7183 7.39024,-11.67998 11.09457,-24.80499 11.09457,-39.33613 0,-11.01584 -2.24964,-21.03852 -6.7502,-30.14073 -4.46864,-9.07202 -9.93785,-16.54102 -16.45271,-22.34403 -6.5008,-5.81263 -12.99987,-11.15539 -19.51512,-15.9679 -6.50083,-4.84488 -12.00021,-9.75058 -16.46884,-14.8129 -4.4848,-5.04657 -6.73444,-10.05419 -6.73444,-14.98395 0,-4.92145 1.73422,-9.67183 5.21588,-14.26559 3.45451,-4.6095 7.67376,-9.04795 12.60967,-13.30571 4.93756,-4.24944 9.87523,-8.96788 14.79665,-14.13302 4.92147,-5.14719 9.14072,-11.82739 12.60971,-20.00822 3.48467,-8.17907 5.20318,-17.44489 5.20318,-27.75679 0,-13.4527 -2.54714,-24.46065 -7.54735,-33.31348 -0.59369,-1.02243 -1.21757,-1.80338 -1.87511,-3.02225 l 56.90745,-46.672136 v 17.118526 c -7.39373,0.92969 -6.62422,5.34582 -6.62422,10.6352 v 128.66719 c 0,5.95832 4.8751,10.83382 10.83386,10.83382 h 3.98869 c 5.95835,0 10.83386,-4.87506 10.83386,-10.83382 V 117.29282 c 0,-5.27669 0.77741,-9.68801 -6.56167,-10.63039 z M 236.39865,329.14114 c 1.14099,0.7503 3.7039,2.78075 7.7184,6.03838 4.0495,3.24319 6.797,5.69582 8.26567,7.41432 1.43851,1.66381 3.5792,4.16501 6.37617,7.54734 2.81268,3.3744 4.7184,6.30394 5.71853,8.73425 1.00016,2.4767 2.01603,5.46089 3.04636,8.94556 0.98567,3.44488 1.48486,6.97595 1.48486,10.56169 0,17.04813 -6.56338,29.68007 -19.65604,37.85915 -13.125,8.18083 -28.76651,12.27368 -46.93767,12.27368 -9.18709,0 -18.2031,-1.09289 -27.06247,-3.1951 -8.84322,-2.11665 -17.31192,-5.3362 -25.39035,-9.60185 -8.07846,-4.25771 -14.57754,-10.20337 -19.50072,-17.79659 -4.93764,-7.64012 -7.40645,-16.41464 -7.40645,-26.24962 0,-10.32022 2.79692,-19.28987 8.42233,-26.90588 5.59343,-7.62564 12.93774,-13.3919 22.03208,-17.3154 9.0624,-3.94582 18.24946,-6.74232 27.56166,-8.39827 9.31221,-1.7023 18.79679,-2.555 28.43842,-2.555 4.46862,0 7.93582,0.25115 10.40465,0.69607 0.45456,0.21918 3.03188,2.07025 7.73456,5.56326 4.70401,3.46237 7.62565,5.59519 8.75047,6.38401 z m -3.35823,-100.5779 c -7.40648,8.85938 -17.73454,13.2882 -30.95363,13.2882 -11.85933,0 -22.29766,-4.76482 -31.26554,-14.31195 -8.99984,-9.52309 -15.42235,-20.32803 -19.34408,-32.43061 -3.93752,-12.10871 -5.90585,-23.98423 -5.90585,-35.648 0,-13.6942 3.59542,-25.35184 10.7809,-34.97598 7.18727,-9.64952 17.49915,-14.48477 30.93786,-14.48477 11.87507,0 22.37423,5.03825 31.43704,15.15677 9.09434,10.08482 15.60961,21.41303 19.5169,33.96799 3.92176,12.5392 5.87345,24.52979 5.87345,35.98399 0,13.44658 -3.70256,24.60984 -11.07663,33.45436 z"/></svg></a>
+
+    <a class="pic" href="PUT-YOUR-LINKEDIN-URL-HERE" target="_blank" rel="noopener" title="LinkedIn" aria-label="LinkedIn"><svg class="ic-li" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"/></svg></a>
+    -->
 
     <span class="vh" role="status" aria-live="polite"></span>
   </div>
 
-  <!-- Section menu. Each link must match the id="..." of a section below. -->
   <nav>
     <a href="#working">Working Papers</a>
+    <a href="#wip">Work in Progress</a>
     <a href="#published">Publications</a>
-    <a href="#software">Software</a>
+    <a href="#policy">Policy Writing</a>
     <a href="#teaching">Teaching</a>
+    <a href="#contact">Contact</a>
   </nav>
 </aside>
 
 <!-- =========================================================================
-     RIGHT COLUMN: the actual content.
+     RIGHT COLUMN
      ========================================================================= -->
 <main class="content" id="top">
   <div class="inner">
 
-    <!-- Opening paragraph. Two or three sentences: who you are, what you work on. -->
-    <p class="lede">PLACEHOLDER — a short opening paragraph introducing yourself:
-    your field, the questions you work on, and anything a visitor should know in
-    the first five seconds. Two or three sentences is the right length.</p>
+    <!-- Opening paragraph. Right now this is just your research areas; you may
+         want to expand it into two or three sentences describing what you work
+         on and why it matters. -->
+    <p class="lede">I am an economist working on <strong>labor economics</strong>,
+    <strong>public economics</strong>, and applied microeconomics. My research uses
+    Italian administrative data to study place-based industrial policy, wage
+    setting and collective bargaining, public sector employment, and the design of
+    hiring subsidies.</p>
+
+    <!-- Affiliations, one per line. -->
+    <ul class="affil">
+      <li>Centre for Studies in Economics and Finance (<a href="https://csef.it" target="_blank">CSEF</a>)
+        and <a href="http://www.dises.unina.it/en_GB/home" target="_blank">Department of Economics and Statistics</a>,
+        University of Naples Federico II</li>
+      <li>Project Leader, <a href="https://www.rfberlin.com" target="_blank">ROCKWOOL Foundation Berlin</a></li>
+      <li>Research Network Affiliate, <a href="https://cesifo.org/en" target="_blank">CESifo</a></li>
+      <li>Ph.D. in Economics (2024), <a href="https://www.ucl.ac.uk/economics/ucl-department-economics" target="_blank">University College London</a></li>
+    </ul>
 
 
     <!-- ===================== WORKING PAPERS =====================
          To add a paper: copy one whole <div class="paper"> ... </div> block
-         and edit the text inside. To remove one: delete the whole block.
-         Any line you do not need (authors, summary, links) can be deleted. -->
+         and edit the text. To remove one: delete the whole block. -->
     <section id="working">
       <h2>Working Papers</h2>
       <hr class="h-rule">
 
       <div class="paper">
-        <div class="title"><a href="#" target="_blank">PLACEHOLDER — Title of Your First Working Paper</a></div>
-        <div class="authors">with PLACEHOLDER Coauthor and PLACEHOLDER Coauthor</div>
+        <div class="title"><a href="https://lincoronato.github.io/files/PBIP_Draft_0126_Full.pdf" target="_blank">Place-based Industrial Policies and Local Development in the Long Run</a></div>
+        <div class="authors">with S. Lattanzio (Bank of Italy)</div>
         <details class="brief">
-          <summary>Summary</summary>
-          <p>PLACEHOLDER — a short, plain-language summary of the paper, three or
-            four sentences. This text stays hidden until the reader clicks
-            &ldquo;Summary&rdquo;, so it does not clutter the page.</p>
+          <summary>Abstract</summary>
+          <p>This paper studies the long-run impact of place-based industrial policy,
+            analyzing a large-scale cluster program conducted in Italy during the 1960s
+            and 1970s. Leveraging administrative data over a century and exogenous
+            variation in the assignment rules, we document higher concentration of
+            workers and firms in the targeted areas lasting well beyond the policy&rsquo;s
+            end. By promoting high-technology manufacturing industries, the intervention
+            fostered a skilled local workforce and spurred demand for business-support
+            activities. Over time, this produced spillovers from manufacturing to
+            knowledge-intensive services, with sustained gains in local wages and human
+            capital. We illustrate that the persistent effects of place-based policy
+            depend on the initial conditions of host locations.</p>
         </details>
-        <div class="plinks"><a href="#" target="_blank">pdf</a><span class="sl">/</span><a href="#" target="_blank">appendix</a></div>
+        <div class="plinks"><a href="https://lincoronato.github.io/files/PBIP_Draft_0126_Full.pdf" target="_blank">draft (01/2026)</a><span class="sl">/</span><a href="https://www.bancaditalia.it/pubblicazioni/temi-discussione/2025/2025-1503/en_tema_1503.pdf" target="_blank">Bank of Italy WP 1503/25</a><span class="sl">/</span><a href="https://www.cesifo.org/en/publications/2024/working-paper/place-based-industrial-policies-and-local-agglomeration-long-run" target="_blank">CESifo WP 11397</a><span class="sl">/</span><a href="https://www.rfberlin.com/wp-content/uploads/2024/10/24019.pdf" target="_blank">RFBerlin DP 19/24</a></div>
+        <div class="extra"><span class="lbl">Presented at</span> <a href="https://www.nber.org/conferences/si-2024-urban-economics" target="_blank">NBER Summer Institute 2024 &mdash; Urban Economics</a></div>
+        <div class="extra"><span class="lbl">Awards</span> <a href="https://irvapp.fbk.eu/2nd-call-for-the-best-paper-in-public-policy-evaluation/" target="_blank">FBK-IRVAPP Best Paper in Public Policy Evaluation</a> &middot; <a href="https://www.fondazioneeinaudi.it/en/participate/scholarships" target="_blank">Compagnia di San Paolo Research Grant</a>, Fondazione Luigi Einaudi</div>
+        <div class="extra"><span class="lbl">Media</span> <a href="https://www.ilsole24ore.com/art/cassa-il-mezzogiorno-una-lezione-che-torna-utile-AFnY27bC" target="_blank">Sole 24 Ore</a> &middot; <a href="https://cepr.org/voxeu/columns/new-economics-industrial-policy" target="_blank">VoxEU</a> &middot; <a href="https://csef.it/wp-content/uploads/7.nota-csef_Place-Based-Industrial-Policies-and-Local-Agglomeration-in-the-Long-Run.pdf" target="_blank">CSEF Short Notes</a> &middot; <a href="https://www.rivistaeco.com/2025/12/13/quando-la-politica-industriale-cambia-il-destino-di-un-territorio/" target="_blank">Eco</a></div>
       </div>
 
       <div class="paper">
-        <div class="title"><a href="#" target="_blank">PLACEHOLDER — Title of Your Second Working Paper</a></div>
+        <div class="title"><a href="https://www.nber.org/papers/w34076" target="_blank">Opting Out of Centralized Collective Bargaining: Evidence from Italy</a></div>
+        <div class="authors">with C. Dustmann (UCL), C. Giannetto (UCL), C. Lacava (Naples Federico II), V. Pezone (LUISS), R. Saggio (UBC), and B. Schoefer (Berkeley)</div>
         <details class="brief">
-          <summary>Summary</summary>
-          <p>PLACEHOLDER — short summary.</p>
+          <summary>Abstract</summary>
+          <p>This paper presents micro-empirical evidence on the effects of wage-setting
+            decentralization. Our setting is Italy, where employers are required to
+            comply with occupation- and industry-specific wage floors set by national
+            collective bargaining agreements. We show that opting out of these
+            agreements reduces wages but increases workers&rsquo; employment and retention
+            within firms. These effects are most pronounced in the more productive
+            North, where the overall impact on workers&rsquo; earnings is slightly positive.
+            In contrast, in the South, wage losses outweigh employment gains, leading to
+            a net decline in earnings. We also find that increased wage-setting
+            flexibility is associated with higher firm survival rates in both regions.
+            The regional divergence in outcomes aligns with a monopsony framework in
+            which productivity and labor supply elasticities vary spatially.</p>
         </details>
-        <div class="plinks"><a href="#" target="_blank">pdf</a></div>
+        <div class="plinks"><a href="https://www.nber.org/papers/w34076" target="_blank">NBER WP 34076</a><span class="sl">/</span><a href="https://cepr.org/publications/dp20477" target="_blank">CEPR DP 20477</a><span class="sl">/</span><a href="https://www.rfberlin.com/wp-content/uploads/2025/07/25043.pdf" target="_blank">RFBerlin DP 43/25</a></div>
+        <div class="extra"><span class="lbl">Summary</span> <a href="https://www.rfberlin.com/research-insights/collective-bargaining-decentralization-italy/" target="_blank">The Winners and Losers of Collective Bargaining Decentralization</a> (RFBerlin Research Insight)</div>
+        <div class="extra"><span class="lbl">Media</span> <a href="https://farecontrattazione.adapt.it/lopt-out-dalla-contrattazione-collettiva-centralizzata-il-caso-italiano/" target="_blank">FareContrattazione &mdash; Adapt</a></div>
+        <div class="extra"><span class="lbl">Data</span> Italian social security records via the Visitinps program</div>
+      </div>
+
+      <div class="paper">
+        <div class="title"><a href="https://www.rfberlin.com/wp-content/uploads/2026/08/26235.pdf" target="_blank">Public Sector Salary Caps and the Careers of Public Managers</a></div>
+        <div class="authors">with E. Di Porto (Sapienza), C. Dustmann (UCL), and C. Giannetto (UCL)</div>
+        <details class="brief">
+          <summary>Abstract</summary>
+          <p>This paper examines how wage caps for public sector managers influence
+            their career trajectories and the selection of talent into public
+            employment. We study a 2014 reform in Italy that introduced a cap on top
+            public sector salaries, leveraging unique matched employer-employee data and
+            an event study design. Managers of public firms affected by the cap were, on
+            average, 10 percentage points more likely to leave for a private sector job.
+            Those who transitioned were significantly more productive than those who
+            remained. Manager departures also increased the likelihood that their
+            co-workers exited public employment&mdash;particularly among high-productivity
+            individuals. We estimate that the reform resulted in a roughly 2 percent
+            decline in public management productivity, while reducing public employment
+            costs by only 0.1 percent.</p>
+        </details>
+        <div class="plinks"><a href="https://www.rfberlin.com/wp-content/uploads/2026/08/26235.pdf" target="_blank">RFBerlin DP 235/26</a><span class="sl">/</span><a href="https://conference.nber.org/conf_papers/f219033.pdf" target="_blank">NBER SI draft</a><span class="sl">/</span><a href="https://www.inps.it/it/it/dati-e-bilanci/attivit--di-ricerca/pubblicazioni/workinps-papers/2025.html" target="_blank">WorkINPS 102</a></div>
+        <div class="extra"><span class="lbl">Presented at</span> <a href="https://www.nber.org/conferences/si-2025-personnel-economics" target="_blank">NBER Summer Institute 2025 &mdash; Personnel Economics</a> &middot; <a href="https://cepr.org/events/event-series/public-economics-symposium/cepr-public-economics-annual-symposium-2026" target="_blank">CEPR Public Economics Annual Symposium 2026</a></div>
+        <div class="extra"><span class="lbl">Summary</span> <a href="https://www.rfberlin.com/research-insights/salary-caps-for-public-managers/" target="_blank">Salary Caps for Public Managers: Cutting Costs, or Losing Talent?</a> (RFBerlin Research Insight)</div>
+        <div class="extra"><span class="lbl">Data</span> Italian social security records via the Visitinps program</div>
+      </div>
+
+      <div class="paper">
+        <div class="title"><a href="https://www.rfberlin.com/wp-content/uploads/2025/09/25067.pdf" target="_blank">Declining Free Lunch: State Capacity and Foregone Public Spending</a></div>
+        <div class="authors">with S. Fritz (IWH-Halle) and C. van der List (Essex)</div>
+        <div class="venue"><span class="y">Revise and resubmit,</span> <span class="v">Journal of Urban Economics</span></div>
+        <details class="brief">
+          <summary>Abstract</summary>
+          <p>This paper documents substantial fiscal waste in the context of one of the
+            world&rsquo;s largest regional development programs &mdash; the EU Cohesion Policy. We
+            study Italy, and find that 20% of funding commitments are never paid out and
+            funneled into unfinished or never-started projects. In our setting, this
+            happens for reasons unrelated to fiscal constraints: municipalities appear to
+            simply leave money on the table. Foregone spending is more prevalent in
+            Southern regions, but there is also stark variation across municipalities
+            within regions. We show that such under-utilization of available funds is
+            strongly associated with limited administrative capacity of local
+            governments.</p>
+        </details>
+        <!-- NOTE: your current site lists this as "RFBerlin Discussion Paper No. 43/25",
+             the same number as the collective-bargaining paper. The PDF filename
+             (25067) suggests it is 67/25, so I left the number off here. Tell me the
+             right one and I will put it back. -->
+        <div class="plinks"><a href="https://www.rfberlin.com/wp-content/uploads/2025/09/25067.pdf" target="_blank">RFBerlin DP</a><span class="sl">/</span><a href="https://www.ifo.de/DocDL/cesifo1_wp12126.pdf" target="_blank">CESifo WP 12126</a></div>
+      </div>
+
+      <div class="paper">
+        <div class="title"><a href="https://www.rfberlin.com/network-paper/female-targeted-hiring-subsidies-firm-learning-and-womens-employment/" target="_blank">Female-Targeted Hiring Subsidies, Firm Learning, and Women&rsquo;s Employment</a></div>
+        <div class="authors">with M. Distefano (LSE) and A. Raute (QMUL)</div>
+        <details class="brief">
+          <summary>Abstract</summary>
+          <p>Women often struggle to re-enter employment after career breaks, possibly
+            because employers are uncertain about their productivity. We study whether
+            hiring subsidies help firms overcome this uncertainty and hire from this
+            group. Exploiting an Italian policy that temporarily cut payroll taxes for
+            women hired from non-employment, we find that firms persistently hire more
+            women with career breaks, including mothers, following subsidy adoption.
+            Consistent with employer learning about target-group productivity, firms
+            with better initial matches later hire more from this group. Subsidized
+            workers also show stronger labor-market attachment. These findings suggest
+            demand-side interventions can complement supply-side policies in addressing
+            gender gaps.</p>
+        </details>
+        <div class="plinks"><a href="https://www.rfberlin.com/network-paper/female-targeted-hiring-subsidies-firm-learning-and-womens-employment/" target="_blank">RFBerlin DP 211/26</a><span class="sl">/</span><a href="https://cepr.org/publications/dp21825" target="_blank">CEPR DP 21825</a></div>
+        <div class="extra"><span class="lbl">Presented at</span> <a href="https://cepr.org/events/event-series/european-summer-symposium-labour-economics-essle/rfberlin-cepr-annual-0" target="_blank">CEPR Annual Symposium in Labour Economics 2026</a> &middot; <a href="https://www.nber.org/conferences/si-2026-gender-economy" target="_blank">NBER Summer Institute 2026 &mdash; Gender in the Economy</a></div>
+        <div class="extra"><span class="lbl">Awards</span> Visitinps Fellowship (2020), granting access to Italian social security data</div>
+      </div>
+    </section>
+
+
+    <!-- ===================== WORK IN PROGRESS ===================== -->
+    <section id="wip">
+      <h2>Work in Progress</h2>
+      <hr class="h-rule">
+      <p class="note">Slides and drafts available upon request.</p>
+
+      <div class="paper">
+        <div class="title">Teleworking and Workers&rsquo; Careers</div>
+        <div class="authors">with V. Pezone (LUISS) and A. Scognamiglio (Naples Federico II)</div>
+      </div>
+
+      <div class="paper">
+        <div class="title">Hydrogen Valleys</div>
+        <div class="authors">with L. Citino (Bank of Italy), F. Del Prato (Aarhus), and S. Lattanzio (Bank of Italy)</div>
+      </div>
+
+      <div class="paper">
+        <div class="title">Firm Subsidies and Worker Outcomes: Evidence from EU Cohesion Policy in Italy</div>
+        <div class="authors">with G. Romani (JRC) and C. van der List (Essex)</div>
       </div>
     </section>
 
@@ -133,77 +257,73 @@ M514 154q0 13 -17 11q-16 0 -16 -11q0 -13 17 -11q16 0 16 11zM572 164q-2 11 -18 9q
       <hr class="h-rule">
 
       <div class="paper">
-        <div class="title"><a href="#" target="_blank">PLACEHOLDER — Title of Your Published Paper</a></div>
-        <div class="authors">with PLACEHOLDER Coauthor</div>
-        <div class="venue"><span class="v">PLACEHOLDER Journal Name</span> <span class="y">&middot; PLACEHOLDER year</span></div>
+        <div class="title"><a href="https://www.aeaweb.org/articles?id=10.1257/pol.20220452" target="_blank">Government Transfers and Votes for State Intervention</a></div>
+        <div class="authors">with G. Albanese (Bank of Italy) and G. de Blasio (Bank of Italy)</div>
+        <div class="venue"><span class="v">American Economic Journal: Economic Policy</span> <span class="y">&middot; 2024 &middot; 16 (3): 451&ndash;80</span></div>
         <details class="brief">
-          <summary>Summary</summary>
-          <p>PLACEHOLDER — short summary of the published paper.</p>
+          <summary>Abstract</summary>
+          <p>Government transfers might have long-lasting consequences on electoral
+            outcomes. We study a regional policy implemented in Italy over the second
+            half of the twentieth century and leverage variation in transfers to show
+            that parties promoting more state intervention in the economy performed
+            better in the targeted areas relative to places that were not subsidized,
+            decades after the end of the policy. This effect does not seem to mirror
+            long-term differences in the economic performance of treated and control
+            areas, which were small, nor other attitudes within the electorate.</p>
         </details>
-        <div class="plinks"><a href="#" target="_blank">pdf</a><span class="sl">/</span><a href="#" target="_blank">doi</a><span class="sl">/</span><a href="#" target="_blank">replication</a></div>
-      </div>
-
-      <div class="paper">
-        <div class="title"><a href="#" target="_blank">PLACEHOLDER — Title of Another Published Paper</a></div>
-        <div class="venue"><span class="v">PLACEHOLDER Journal Name</span> <span class="y">&middot; PLACEHOLDER year</span></div>
-        <details class="brief">
-          <summary>Summary</summary>
-          <p>PLACEHOLDER — short summary.</p>
-        </details>
-        <div class="plinks"><a href="#" target="_blank">pdf</a><span class="sl">/</span><a href="#" target="_blank">doi</a></div>
+        <div class="plinks"><a href="https://www.aeaweb.org/articles?id=10.1257/pol.20220452" target="_blank">published version</a></div>
+        <div class="extra"><span class="lbl">Media</span> <a href="https://cepr.org/voxeu/columns/long-lasting-electoral-consequences-regional-transfers" target="_blank">VoxEU</a> &middot; <a href="https://www.ilriformista.it/la-stagione-dei-bonus-e-il-virus-dellassistenzialismo-cosi-il-sud-rimane-fermo-456619/" target="_blank">Il Riformista</a></div>
       </div>
     </section>
 
 
-    <!-- ===================== SOFTWARE =====================
-         Delete this whole <section> if you do not want a software page.
-         Remember to also delete its link in the menu above. -->
-    <section id="software">
-      <h2>Software</h2>
+    <!-- ===================== POLICY WRITING ===================== -->
+    <section id="policy">
+      <h2>Policy Writing</h2>
       <hr class="h-rule">
 
-      <div class="pkg">
-        <span class="pname"><a href="#" target="_blank">placeholder-package</a></span>
-        <span class="lang">&mdash; PLACEHOLDER language</span>
-        <div class="desc">PLACEHOLDER — one line saying what the package does.</div>
-        <!-- The badges are small images generated on the fly by shields.io.
-             Delete this block if you do not want them. -->
-        <div class="badges">
-          <img src="https://img.shields.io/badge/version-0.1.0-informational" alt="Version 0.1.0">
-        </div>
-      </div>
-
-      <div class="pkg">
-        <span class="pname"><a href="#" target="_blank">another-package</a></span>
-        <span class="lang">&mdash; PLACEHOLDER language</span>
-        <div class="desc">PLACEHOLDER — one line saying what this one does.</div>
-      </div>
+      <ul class="plist">
+        <li><a href="https://www.rfberlin.com/research-insights/salary-caps-for-public-managers/" target="_blank">Salary Caps for Public Managers: Cutting Costs, or Losing Talent?</a>
+          <span class="src">RFBerlin Research Insight</span></li>
+        <li><a href="https://www.rivistaeco.com/2025/12/13/quando-la-politica-industriale-cambia-il-destino-di-un-territorio/" target="_blank">Quando la politica industriale cambia il destino di un territorio</a>
+          <span class="src">Eco, December 2025</span></li>
+        <li><a href="https://www.rfberlin.com/research-insights/collective-bargaining-decentralization-italy/" target="_blank">The Winners and Losers of Collective Bargaining Decentralization</a>
+          <span class="src">RFBerlin Research Insight</span></li>
+      </ul>
     </section>
 
 
-    <!-- ===================== TEACHING ===================== -->
+    <!-- ===================== TEACHING =====================
+         Your current site has no teaching page, so this is still empty.
+         Send me the courses and I will fill it in — or delete this whole
+         <section> and its link in the menu above if you do not want it. -->
     <section id="teaching">
       <h2>Teaching</h2>
       <hr class="h-rule">
 
       <div class="course">
-        <div class="cname">PLACEHOLDER — Course Code and Name, Institution</div>
-        <div class="role2">PLACEHOLDER role, PLACEHOLDER term &mdash; <span class="score">0.00/5</span> (dept. avg. 0.00)</div>
-        <details class="brief">
-          <summary>Description</summary>
-          <p>PLACEHOLDER — a short description of the course: level, topics
-            covered, software used.</p>
-        </details>
-      </div>
-
-      <div class="course">
-        <div class="cname">PLACEHOLDER — Another Course, Institution</div>
+        <div class="cname">PLACEHOLDER — Course code and name, institution</div>
         <div class="role2">PLACEHOLDER role, PLACEHOLDER term</div>
         <details class="brief">
           <summary>Description</summary>
-          <p>PLACEHOLDER — short description.</p>
+          <p>PLACEHOLDER — level, topics covered, software used.</p>
         </details>
       </div>
+    </section>
+
+
+    <!-- ===================== CONTACT ===================== -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <hr class="h-rule">
+
+      <address class="contact">
+        <a href="mailto:lorenzo.incoronato@unina.it">lorenzo.incoronato@unina.it</a><br>
+        Department of Economics and Statistics<br>
+        University of Naples Federico II<br>
+        Via Cintia, Monte S. Angelo<br>
+        80126 Napoli, Italy
+      </address>
     </section>
 
   </div>
@@ -222,7 +342,7 @@ M514 154q0 13 -17 11q-16 0 -16 -11q0 -13 17 -11q16 0 16 11zM572 164q-2 11 -18 9q
 
   // Try the modern clipboard API first, then fall back to a throwaway textarea.
   // The fallback matters: navigator.clipboard is absent or rejects when the page
-  // is opened straight from disk (file://), which is how you will preview it.
+  // is opened straight from disk (file://), which is how you preview it.
   function legacyCopy(text) {
     return new Promise(function (resolve, reject) {
       var ta = document.createElement('textarea');
@@ -256,8 +376,6 @@ M514 154q0 13 -17 11q-16 0 -16 -11q0 -13 17 -11q16 0 16 11zM572 164q-2 11 -18 9q
         if (live) live.textContent = '';
       }, 1600);
     }).catch(function () {
-      // Copying is impossible: opening the mail client is the most useful
-      // thing the click can still do.
       window.location.href = 'mailto:' + btn.dataset.email;
     });
   });
@@ -274,9 +392,9 @@ M514 154q0 13 -17 11q-16 0 -16 -11q0 -13 17 -11q16 0 16 11zM572 164q-2 11 -18 9q
     var current = null;
     for (var i = 0; i < sections.length; i++) if (sections[i].offsetTop <= probe) current = sections[i];
 
-    // The probe sits 30% down the viewport, so the last section — usually
-    // shorter than that — could never win the loop above. Once the page is
-    // scrolled to the end, the final section is what the reader is looking at.
+    // The probe sits 30% down the viewport, so the last section — usually shorter
+    // than that — could never win the loop above. Once the page is scrolled to
+    // the end, the final section is what the reader is looking at.
     var docH = Math.max(document.documentElement.scrollHeight, document.body.scrollHeight);
     var scrollable = docH > window.innerHeight;
     if (sections.length && scrollable && window.scrollY + window.innerHeight >= docH - 2) {

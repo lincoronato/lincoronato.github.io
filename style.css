@@ -202,6 +202,27 @@ h2 { font-size: 24px; font-weight: 600; margin: 48px 0 6px; }
 p + p { margin-top: 14px; }
 
 
+/* ---------- AFFILIATIONS, NOTES, AND CONTACT ------------------------------ */
+
+/* the short list of affiliations under the opening paragraph */
+.affil { list-style: none; margin: 16px 0 4px; padding: 0; }
+.affil li {
+  font-size: 16px; line-height: 1.5; color: var(--muted);
+  padding-left: 15px; position: relative; margin-top: 5px;
+}
+.affil li::before {
+  content: ""; position: absolute; left: 0; top: .62em;
+  width: 5px; height: 5px; border-radius: 50%; background: var(--accent);
+}
+
+/* small grey note under a heading, e.g. "available upon request" */
+.note { font-size: 15px; color: var(--muted); margin: -8px 0 20px; font-style: italic; }
+
+/* postal address block */
+.contact { font-style: normal; font-size: 16.5px; line-height: 1.7; color: var(--muted); }
+.contact a { color: var(--link); }
+
+
 /* ---------- PAPERS -------------------------------------------------------- */
 
 .paper { margin-bottom: 26px; }
@@ -216,6 +237,20 @@ p + p { margin-top: 14px; }
 .paper .plinks { font-size: 14.5px; margin-top: 5px; letter-spacing: .01em; }
 .paper .plinks a { color: var(--link); margin-right: 2px; }
 .paper .plinks .sl { color: var(--rule); margin: 0 6px; }
+
+/* extra lines under a paper: Presented at / Awards / Media / Data */
+.paper .extra { font-size: 14.5px; line-height: 1.5; color: var(--muted); margin-top: 4px; }
+.paper .extra a { color: var(--muted); text-decoration: underline; text-underline-offset: 2px; text-decoration-color: var(--rule); }
+.paper .extra a:hover { color: var(--link); text-decoration-color: currentColor; }
+.paper .extra .lbl {
+  font-size: 11px; font-weight: 700; letter-spacing: .13em; text-transform: uppercase;
+  color: var(--accent); margin-right: 5px;
+}
+
+/* policy writing list */
+.plist { list-style: none; margin: 0; padding: 0; }
+.plist li { margin-bottom: 14px; font-size: 17px; line-height: 1.45; }
+.plist .src { display: block; font-size: 14.5px; color: var(--muted); margin-top: 1px; }
 
 /* the click-to-open "Summary" / "Description" blocks */
 .brief { margin: 6px 0 2px; }
