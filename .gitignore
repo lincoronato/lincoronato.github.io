@@ -1,13 +1,11 @@
-# Ignore the contents of the _site directory and other cache directories
-_site/
-.sass-cache/
+# macOS clutter
+.DS_Store
+._*
 
-# Ignore the directory for local files during development
-local/
+# editor scratch files
+*~
+.vscode/
+.idea/
 
-# Ignore the Gemfile that is generated
-Gemfile.lock
-
-# Ingore files created by npm
-node_modules
-package-lock.json
+# local preview helper (not part of the site)
+.claude/
