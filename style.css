@@ -5,7 +5,7 @@
 
    1. COLOURS. Six ready-made schemes are defined below. Pick one by editing
       the single word in index.html, line 9:  <html lang="en" data-palette="midnight">
-      Options: midnight | harbor | forest | plum | graphite | sand
+      Options: teal | midnight | harbor | forest | plum | graphite | sand
 
    2. FONT. See the --font line in the :root block below; three alternatives
       are written out as comments right underneath it. Swap one in.
@@ -20,11 +20,12 @@
 :root {
   /* ACTIVE FONT — a modern book serif, quite different from Times.
      To change the font, comment this line out and uncomment one below. */
-  --font: Charter, "Bitstream Charter", "Sitka Text", Cambria, Georgia, serif;
+ --font: "Optima", "Gill Sans", "Trebuchet MS", sans-serif;  humanist sans-serif;
 
   /* --font: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;  classic academic serif */
   /* --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;  clean sans-serif */
   /* --font: "Optima", "Gill Sans", "Trebuchet MS", sans-serif;  humanist sans-serif */
+  /* --font: Charter, "Bitstream Charter", "Sitka Text", Cambria, Georgia, serif */
 
   /* The page surface. Slightly warm white, dark grey text. */
   --paper:   #fbfaf8;
@@ -33,7 +34,15 @@
   --rule:    #e2e0da;
   --divider: rgba(0,0,0,.06);
 
-  --sidebar-w: 320px;
+  --sidebar-w: 368px;   /* width of the left banner: sized so the longest
+                           affiliation line ("Center for Studies in Economics
+                           and Finance,") fits on one line. If you make that
+                           line longer, widen this (or shorten the text). */
+
+  /* HOW WIDE THE TEXT COLUMN IS ALLOWED TO GET.
+     Raise it to use more of a wide screen, lower it for shorter, easier-to-read
+     lines. Somewhere between 800px and 1200px is sensible. */
+  --content-w: 1020px;
 }
 
 
@@ -50,39 +59,58 @@
      --link         colour of links in the main column
    -------------------------------------------------------------------------- */
 
-/* midnight — deep blue banner, teal accent (currently active) */
+/* teal — dark teal banner and text, amber used only as decoration (active).
+   #0d4b4d is a darker shade of the #116466 you gave me; it is both the banner
+   background and the colour of every piece of coloured text on the page (paper
+   titles, links, course names, the small uppercase labels).
+   The amber #c2700a is now purely decorative: the short bar under each heading,
+   the affiliation bullets, the teaching score, and the hover state on a title.
+   To go back to the original lighter teal, put #116466 in --side-bg below. */
+html[data-palette="teal"] {
+  --side-bg:#0d4b4d; --side-ink:#eef4f3; --side-dim:#c6dedc; --side-strong:#fff; --side-active:#f7ce96;
+  --side-rule: rgba(255,255,255,.20);
+  --accent:#c2700a; --link:#0d4b4d;
+}
+
+/* midnight — deep blue banner, teal accent */
 html[data-palette="midnight"] {
   --side-bg:#202a3c; --side-ink:#eef1f6; --side-dim:#98a3b5; --side-strong:#fff; --side-active:#8fbcd9;
+  --side-rule: rgba(255,255,255,.20);
   --accent:#2a6f8f; --link:#256179;
 }
 
 /* harbor — soft slate-blue banner, warm amber accent */
 html[data-palette="harbor"] {
   --side-bg:#33465c; --side-ink:#eef2f6; --side-dim:#a3b1c1; --side-strong:#fff; --side-active:#f0b775;
+  --side-rule: rgba(255,255,255,.20);
   --accent:#b06f2a; --link:#96601f;
 }
 
 /* forest — dark green banner, deep olive accent */
 html[data-palette="forest"] {
   --side-bg:#1f3a30; --side-ink:#eef1e9; --side-dim:#a5b5a8; --side-strong:#fff; --side-active:#c2d6a8;
+  --side-rule: rgba(255,255,255,.20);
   --accent:#3f6b4a; --link:#38603f;
 }
 
 /* plum — aubergine banner, dusty rose accent */
 html[data-palette="plum"] {
   --side-bg:#3a2740; --side-ink:#f2edf3; --side-dim:#b6a5bb; --side-strong:#fff; --side-active:#d9a8c4;
+  --side-rule: rgba(255,255,255,.20);
   --accent:#8a4f74; --link:#7a4566;
 }
 
 /* graphite — neutral dark grey banner, blue accent */
 html[data-palette="graphite"] {
   --side-bg:#2b2f36; --side-ink:#edeef0; --side-dim:#a6acb5; --side-strong:#fff; --side-active:#9dc4e0;
+  --side-rule: rgba(255,255,255,.20);
   --accent:#3a6ea5; --link:#325e8c;
 }
 
 /* sand — pale banner with dark text; a lighter, quieter look */
 html[data-palette="sand"] {
   --side-bg:#e8e2d6; --side-ink:#2b2620; --side-dim:#7a7062; --side-strong:#000; --side-active:#9b5b28;
+  --side-rule: rgba(0,0,0,.16);
   --accent:#9b5b28; --link:#8a4f21;
 }
 
@@ -114,7 +142,7 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
   width: var(--sidebar-w);
   background: var(--side-bg);
   color: var(--side-ink);
-  padding: 44px 40px 28px;
+  padding: 44px 32px 28px;
   display: flex; flex-direction: column;
   overflow: hidden;              /* the banner never scrolls on its own */
   border-right: 1px solid var(--divider);
@@ -124,7 +152,7 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
    scrolling. On a short window the portrait — the flexible element — shrinks to
    absorb the deficit, so the menu underneath always stays visible. */
 .sidebar img.me {
-  width: 240px; height: 288px;
+  width: 304px; height: 365px;   /* spans the banner's full inner width */
   flex: 0 1 auto;                /* may shrink when the window is short */
   min-height: 140px;             /* ...but never below a recognizable portrait */
   object-fit: cover;
@@ -144,7 +172,7 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
 .sidebar .role { margin-top: 8px; font-size: 14.5px; line-height: 1.5; color: var(--side-dim); }
 
 /* the section menu */
-.sidebar nav { margin-top: 26px; padding-top: 22px; border-top: 1px solid var(--divider); }
+.sidebar nav { margin-top: 26px; padding-top: 22px; border-top: 1px solid var(--side-rule); }
 .sidebar nav a {
   display: block; color: var(--side-ink);
   font-size: 16px; padding: 6px 0;
@@ -161,7 +189,7 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
   letter-spacing: .13em; text-transform: uppercase;
 }
 .sidebar .idlinks .cv:hover { color: var(--side-ink); text-decoration: none; }
-.sidebar .idlinks .sep { width: 1px; height: 15px; background: var(--side-dim); opacity: .5; }
+.sidebar .idlinks .sep { width: 1px; height: 15px; background: var(--side-rule); }
 .sidebar .idlinks .pic {
   display: inline-flex; align-items: center; justify-content: center;
   color: var(--side-dim); background: none; border: 0; padding: 0; cursor: pointer;
@@ -187,16 +215,22 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
 
 /* ---------- RIGHT COLUMN -------------------------------------------------- */
 
-.content { margin-left: var(--sidebar-w); padding: 72px 64px 72px; }
-.inner { max-width: 820px; }          /* keeps lines a comfortable length */
+.content { margin-left: var(--sidebar-w); padding: 72px 56px 72px; }
+.inner { max-width: var(--content-w); }   /* set this at the top of the file */
+
+/* Breathing room after the last section. This is not only cosmetic: the menu
+   highlights whichever section has scrolled near the top of the window, so the
+   final sections need enough space beneath them to actually get there. Without
+   it the page runs out of scroll early and Teaching can never be highlighted. */
+.inner { padding-bottom: 32vh; }
 section { scroll-margin-top: 34px; }
 
 /* the opening paragraph */
 .lede { font-size: 18px; line-height: 1.5; margin: 4px 0 8px; }
-.lede strong { color: var(--ink); }
+.lede strong { color: var(--link); }
 
 /* section headings and the short coloured bar under them */
-h2 { font-size: 24px; font-weight: 600; margin: 48px 0 6px; }
+h2 { font-size: 24px; font-weight: 600; margin: 48px 0 6px; color: var(--link); }
 .h-rule { width: 46px; height: 3px; background: var(--accent); border: none; margin: 0 0 22px; }
 
 p + p { margin-top: 14px; }
@@ -226,9 +260,9 @@ p + p { margin-top: 14px; }
 /* ---------- PAPERS -------------------------------------------------------- */
 
 .paper { margin-bottom: 26px; }
-.paper .title { font-size: 18px; font-weight: 600; line-height: 1.35; }
-.paper .title a { color: var(--ink); }
-.paper .title a:hover { color: var(--link); text-decoration: none; }
+.paper .title { font-size: 18px; font-weight: 600; line-height: 1.35; color: var(--link); }
+.paper .title a { color: inherit; }
+.paper .title a:hover { color: var(--accent); text-decoration: none; }
 .paper .authors { font-size: 15.5px; color: var(--muted); margin-top: 2px; }
 .paper .authors a { color: inherit; }
 .paper .venue { font-size: 15px; margin-top: 2px; }
@@ -244,7 +278,7 @@ p + p { margin-top: 14px; }
 .paper .extra a:hover { color: var(--link); text-decoration-color: currentColor; }
 .paper .extra .lbl {
   font-size: 11px; font-weight: 700; letter-spacing: .13em; text-transform: uppercase;
-  color: var(--accent); margin-right: 5px;
+  color: var(--link); margin-right: 5px;
 }
 
 /* policy writing list */
@@ -271,7 +305,7 @@ p + p { margin-top: 14px; }
 /* ---------- TEACHING ------------------------------------------------------ */
 
 .course { margin-bottom: 24px; }
-.course .cname { font-size: 18.5px; font-weight: 600; }
+.course .cname { font-size: 18.5px; font-weight: 600; color: var(--link); }
 .course .role2 { color: var(--muted); font-size: 15.5px; margin-top: 2px; }
 .course .score { color: var(--accent); font-weight: 700; }
 
@@ -280,8 +314,8 @@ p + p { margin-top: 14px; }
 
 .pkg { margin-bottom: 26px; }
 .pkg .pname { font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; font-size: 16.5px; font-weight: 700; }
-.pkg .pname a { color: var(--ink); }
-.pkg .pname a:hover { color: var(--link); text-decoration: none; }
+.pkg .pname a { color: var(--link); }
+.pkg .pname a:hover { color: var(--accent); text-decoration: none; }
 .pkg .lang { color: var(--muted); font-size: 14.5px; }
 .pkg .desc { font-size: 16px; margin-top: 3px; }
 .pkg .badges { margin-top: 9px; display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }

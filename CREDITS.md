@@ -29,12 +29,12 @@ Copyright (c) 2022-2026 Filippo Palomba.
 
 ## Icons
 
-- **GitHub** glyph in `index.html`: traced from the Font Awesome 4.7.0 webfont
-  by Dave Gandy, licensed under SIL OFL 1.1 (<https://scripts.sil.org/OFL>).
-  The GitHub logo is a trademark of GitHub, Inc.
-- **Google Scholar** glyph: from Academicons 1.9.2 by James Walsh and Katja
-  Bercic, licensed under SIL OFL 1.1. Google Scholar is a trademark of Google LLC.
+- **Google Scholar** glyph in `index.html`: from Academicons 1.9.2 by James
+  Walsh and Katja Bercic, licensed under SIL OFL 1.1
+  (<https://scripts.sil.org/OFL>). Google Scholar is a trademark of Google LLC.
 - **LinkedIn** glyph: from Simple Icons (<https://simpleicons.org>), released
   under CC0 1.0. The LinkedIn logo is a trademark of LinkedIn Corporation.
+- **ORCID** glyph: from Simple Icons (<https://simpleicons.org>), released under
+  CC0 1.0. The ORCID iD icon is a trademark of ORCID, Inc.
 
 Trademarks are used for identification only and imply no endorsement.
