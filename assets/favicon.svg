@@ -1,4 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="12" fill="#202a3c"/>
-  <text x="32" y="43" text-anchor="middle" font-family="Georgia, serif" font-size="30" fill="#f2efe9">LI</text>
+  <rect width="64" height="64" rx="14" fill="#0d4b4d"/>
+  <g fill="#f2e8d5">
+    <ellipse cx="14.8" cy="23.5" rx="10.4" ry="4.8" transform="rotate(-40 14.8 23.5)"/>
+    <ellipse cx="49.2" cy="23.5" rx="10.4" ry="4.8" transform="rotate(40 49.2 23.5)"/>
+    <ellipse cx="19.6" cy="45.6" rx="7.2" ry="3.7" transform="rotate(38 19.6 45.6)"/>
+    <ellipse cx="44.4" cy="45.6" rx="7.2" ry="3.7" transform="rotate(-38 44.4 45.6)"/>
+    <ellipse cx="32" cy="12.2" rx="5.4" ry="4.9"/>
+    <ellipse cx="32" cy="32.6" rx="14.6" ry="16.2"/>
+  </g>
 </svg>
