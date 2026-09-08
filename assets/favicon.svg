@@ -1,11 +1,18 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
   <rect width="64" height="64" rx="14" fill="#0d4b4d"/>
   <g fill="#f2e8d5">
-    <ellipse cx="14.8" cy="23.5" rx="10.4" ry="4.8" transform="rotate(-40 14.8 23.5)"/>
-    <ellipse cx="49.2" cy="23.5" rx="10.4" ry="4.8" transform="rotate(40 49.2 23.5)"/>
-    <ellipse cx="19.6" cy="45.6" rx="7.2" ry="3.7" transform="rotate(38 19.6 45.6)"/>
-    <ellipse cx="44.4" cy="45.6" rx="7.2" ry="3.7" transform="rotate(-38 44.4 45.6)"/>
-    <ellipse cx="32" cy="12.2" rx="5.4" ry="4.9"/>
-    <ellipse cx="32" cy="32.6" rx="14.6" ry="16.2"/>
+    <path d="M4.3 21.0 C8 18.2 12 17.3 15.5 17.5 C20 17.8 24.5 20 27.5 24.5
+             C26 27 24.5 28.6 23 29.5 C20 26.5 16 24.2 11.5 23.2 C8.5 22.6 6 22 4.3 21.0 Z"/>
+    <path d="M59.7 21.0 C56 18.2 52 17.3 48.5 17.5 C44 17.8 39.5 20 36.5 24.5
+             C38 27 39.5 28.6 41 29.5 C44 26.5 48 24.2 52.5 23.2 C55.5 22.6 58 22 59.7 21.0 Z"/>
+    <ellipse cx="21.3" cy="50.2" rx="4.9" ry="3.1" transform="rotate(30 21.3 50.2)"/>
+    <ellipse cx="42.7" cy="50.2" rx="4.9" ry="3.1" transform="rotate(-30 42.7 50.2)"/>
   </g>
+  <!-- head: shorter and a touch wider, so it reads as a head rather than a pill -->
+  <path d="M32 11.0 C34.9 11.0 36.3 12.9 36.3 15.3 L36.3 24 C36.3 26 34.3 26.8 32 26.8
+           C29.7 26.8 27.7 26 27.7 24 L27.7 15.3 C27.7 12.9 29.1 11.0 32 11.0 Z"
+        fill="#f2e8d5" stroke="#0d4b4d" stroke-width="1.7"/>
+  <path d="M32 54.8 C25.2 51.2 18.0 44 18.0 36.5 C18.0 27.5 24 21.6 32 21.6
+           C40 21.6 46.0 27.5 46.0 36.5 C46.0 44 38.8 51.2 32 54.8 Z"
+        fill="#f2e8d5" stroke="#0d4b4d" stroke-width="1.8"/>
 </svg>
