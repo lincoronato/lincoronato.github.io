@@ -1,6 +1,7 @@
 # My personal website
 
-Source for <https://lincoronato.github.io>.
+Source for <https://www.lorenzoincoronato.com> (also served at
+<https://lincoronato.github.io>, which redirects there).
 
 A plain static site: two files do all the work. Nothing to install, build, or
 compile.
