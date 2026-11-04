@@ -290,6 +290,14 @@ p + p { margin-top: 14px; }
    start an item with <span class="when">Sep 2026</span> and it sits in a
    fixed-width column before the text. Note this is inline-block, not flex:
    a flex row would break every link in the item onto its own column. */
+/* a quieter follow-up line under a news item (e.g. press pickup) */
+.news .followup {
+  display: block;
+  margin-top: 3px;
+  font-size: 14.5px;
+  color: var(--muted);
+}
+
 .news .when {
   display: inline-block;
   width: 82px;
